@@ -3,3 +3,48 @@
     margin: 0;
     box-sizing: 0;
 }
+
+.result-card{
+    border: 1px solid #C0C0C0;
+}
+
+.result-card img {
+    width: auto;
+}
+
+.resultBtn{
+    position: absolute;
+    top:0;
+    padding:4px;
+    right:0;
+}
+
+.resultBtn button {
+    padding: 0 20px;
+    height: 30px;
+    margin-left: 14px;
+    border: none;
+    background-color: #EB6864;
+    color: #C0C0C0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.resultBtn a {
+    padding: 6px 20px;
+    border:none;
+    margin-left: 14px;
+    background-color: #EB6864;
+    border: 4px;
+    cursor: pointer;
+    color: #C0C0C0;
+}
+
+.resultBtn button:hover {
+    background-color: #EB6864;
+}
+
+.resultBtn a:hover {
+    background-color: #EB6864;
+    text-decoration: none;
+}
