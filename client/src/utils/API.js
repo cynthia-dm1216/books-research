@@ -16,30 +16,27 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
-  };
+  },
 
-  getUsersByLanguage: function(language) {
+  getBooksByQuery: function(query) {
+    let queryUrl = 'https://www.googleapis.com/books/v1/volumes?q='+ query + '&key=AIzaSyDbBpOH8GsAaBvCNe1eRChSpw_vpVKaSTQ';
     return new Promise((resolve, reject) => {
       axios
-        .get("https://api.github.com/orgs/github/public_members")
+        .get(queryUrl)
         .then(res => {
-          const users = res.data;
-          const results = users.map(user => {
+          const books = res.data.items;
+          const results = books.map(book => {
             return {
-              login: user.login,
-              image: user.avatar_url,
-              language: language
+              title: book.volumeInfo.title,
+              authors: book.volumeInfo.authors,
+              image: book.volumeInfo.imageLinks.thumbnail,
+              description: book.volumeInfo.description,
+              link: book.volumeInfo.infoLink
             };
           });
           resolve(results);
         })
         .catch(err => reject(err));
     });
-  },
-  // Return a Promise to simulate an async call
-  getLanguagesList: function() {
-    return new Promise(resolve => {
-      resolve(languages);
-    });
-  }  
+  }
 };
