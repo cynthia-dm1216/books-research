@@ -1,8 +1,10 @@
 import React from 'react';
+import './style.css';
 
 function SearchCard(){
     return(
         <div className='search-card'>
+            <h3>Book Search</h3>
             <form>
                 <div className='form-group'>
                     <label for='search-input'>Book</label>
