@@ -12,7 +12,7 @@ function Nav() {
           <link className='nav-link' to='/'>Search</link>
         </li>
         <li className='nav-item'>
-          <Link className='nav-link' to='/saved'>Saved</Link>
+          <Link className='nav-link' to='/saved'>Saved</Link> 
         </li>
       </ul>
     </nav>
