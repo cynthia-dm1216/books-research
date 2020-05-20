@@ -5,7 +5,7 @@ import API from '../../utils/API';
 function ResultCard(props){
     const { title, authors, description, image, link } = props;
 
-    cosnt [books] = useState({
+    const [book] = useState({
         title: title,
         authors: authors,
         image: image,
