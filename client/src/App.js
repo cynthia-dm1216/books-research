@@ -4,14 +4,14 @@ import SearchBar from "./pages/SearchBar";
 // import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-// import Jumbotron from './components/Jumbotron';
+import Jumbotron from './components/Jumbotron';
 
 function App() {
   return (
     <Router>
       <div>
         <Nav />
-        {/* <Jumbotron /> */}
+        <Jumbotron />
         <Switch>
           <Route exact path= '/'>
             <SearchBar />

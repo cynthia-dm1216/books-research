@@ -1,8 +1,12 @@
 import React from 'react';
+import SearchCard from '../components/SearchCard';
 
 function SearchBar() {
     return(
-        <h1>HELLO</h1>
+        <div>
+            <SearchCard />
+            
+        </div>
     );
 }
 

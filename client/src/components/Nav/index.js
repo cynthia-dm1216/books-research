@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" to="/">
        Google Books
-      </a>
+      </Link>
       <ul className='navbar-nav mr-auto'>
         <li className='nav-item active'>
-          <link className='nav-link' to='/'>Search</link>
+          <Link className='nav-link' to='/'>Search</Link>
         </li>
         <li className='nav-item'>
           <Link className='nav-link' to='/saved'>Saved</Link> 

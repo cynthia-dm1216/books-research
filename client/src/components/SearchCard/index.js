@@ -2,15 +2,17 @@ import React from 'react';
 
 function SearchCard(){
     return(
-        <form>
-        <div className='card-body'>
-            <div className='form-group'>
-                <label>Book</label>
-                <input className='form-control' id='bookInput' placeholder='Harry Potter' />
-            </div>
-            <button type='submit' className='btn btn-primary'>Submit</button>
+        <div className='search-card'>
+            <form>
+                <div className='form-group'>
+                    <label for='search-input'>Book</label>
+                    <input className='form-control' id='searchInput' placeholder='Harry Potter'></input>
+                </div>
+                <button type='submit' className='btn btn-primary'>Submit</button>
+            </form>
         </div>
-        </form>
+       
+        
     );
 }
 
