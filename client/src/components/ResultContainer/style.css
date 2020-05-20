@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.result-container {
+    margin: 20px;
+    border: 1px solid #EB6864;
+    padding: 20px;
+}
