@@ -3,13 +3,13 @@ import './style.css';
 import ResultCard from '../ResultCard';
 import BookContext from '../../utils/BookContext';
 
-function ResultContainer(){
-  const books = useContext(BookContext);
+function ResultContainer(props){
+  const {books} = props
 
 return(
   <div className='result-container'>
           <div className='form-group'>
-              <label for='resultInput'>Results</label>  
+              <label>Results</label>  
               {books.length ? (
                 books.map(book =>
                 <ResultCard 
