@@ -32,7 +32,7 @@ Created two pages:
 
 * `link` - The Book's information link as returned from the Google Books API
 
-* CSS Frameworks - UIKit
+* CSS Frameworks - Bootstrap
 
 * The layout should include at least two React Components for each page `Search` and `Saved`.
 

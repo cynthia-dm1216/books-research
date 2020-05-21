@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 function SavedCard(props){
-    const { title, authors, description, image, link } = props;
+    const { title, authors, description, image, link, deleteBook } = props;
 
     return (
         <div className='card mb-3 result-card' key={image}>
@@ -17,8 +17,9 @@ function SavedCard(props){
                       <p className="card-text"><small className="text-muted">By {authors.join(',')}</small></p>
                     </div>
                 </div>
-                <div className='resultBtn'>
-                    <a href={link} rel='noopener noreferrer'>View</a>
+                <div>
+                    <button className='btn btn-light' onClick={deleteBook}>Delete</button>
+                    <a href={link} rel='noopener noreferrer' className='btn btn-light'>View</a>
                 </div>
             </div>
         </div>

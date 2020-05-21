@@ -34,6 +34,7 @@ function ResultCard(props){
         </div>
         <div className='resultBtn'>
             <a href={link} rel='noopener noreferrer'>View</a><button onClick={()=> saveBook(book)}>Save</button>
+            
         </div>
     </div>
 </div>

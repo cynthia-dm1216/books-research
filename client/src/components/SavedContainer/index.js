@@ -15,6 +15,23 @@ function SavedContainer() {
         .then(res => setBooks(res.data))
         .catch(err => console.log(err));
     }
+
+    return (
+        <div className='saved-container'>
+            <label>Saved</label>
+            {books.map(book => 
+               <SavedCard 
+               key={book._id}
+               title={book.title}
+               authors={book.authors}
+               image={book.image}
+               description={book.description} 
+               link={book.link}
+               deleteBook={() => deleteBook(book._id)}
+               />
+            )}
+        </div>
+    );
 }
 
 export default SavedContainer;

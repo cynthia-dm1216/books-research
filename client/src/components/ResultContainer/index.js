@@ -1,7 +1,6 @@
-import React, { useContext }from 'react';
+import React from 'react';
 import './style.css';
 import ResultCard from '../ResultCard';
-import BookContext from '../../utils/BookContext';
 
 function ResultContainer(props){
   const {books} = props
