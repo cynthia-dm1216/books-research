@@ -63,8 +63,9 @@ SO that I can buy and read more about them later
 - - -
 
 ## Deploy Link
-
+* [Google Book Research](https://google-book-search-21.herokuapp.com/)
 
 ## Screenshots
-
+![headerImg](./client/public/Assets/headerImg.png)
+![SearchImg](./client/public/Assets/SearchImg.png)
 
