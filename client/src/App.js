@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SearchBar from "./pages/SearchBar";
-// import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+import SavedBar from "./pages/SavedBar";
 import Nav from "./components/Nav";
 import Jumbotron from './components/Jumbotron';
 
@@ -16,8 +15,8 @@ function App() {
           <Route exact path= '/'>
             <SearchBar />
           </Route>
-          <Route>
-            <NoMatch />
+          <Route exact path='/saved'>
+            <SavedBar />
           </Route>
         </Switch>
       </div>

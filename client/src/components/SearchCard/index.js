@@ -3,13 +3,14 @@ import './style.css';
 import API from '../../utils/API';
 
 function SearchCard(){
-    const [books , setBooks ] = useState([]);
-    const bookSearch = useRef();
+
+    const [ setBooks ] = useState([]);
+    const searchQuery = useRef();
 
     function searchBooks(e) {
         e.preventDefault();
 
-        API.getBooksByQuery(bookSearch.current.value)
+        API.getBooksByQuery(searchQuery.current.value)
         .then(res => {
             setBooks(res)
         })
@@ -22,9 +23,9 @@ function SearchCard(){
             <form>
                 <div className='form-group'>
                     <label for='search-input'>Book</label>
-                    <input className='form-control' id='searchInput' placeholder='Harry Potter'></input>
+                    <input className='form-control' id='searchInput' placeholder='Harry Potter' ref={searchQuery} />
                 </div>
-                <button type='submit' className='btn btn-primary'>Submit</button>
+                <button type='submit' className='btn btn-primary' onClick={searchBooks}>Submit</button>
             </form>
         </div>
        
